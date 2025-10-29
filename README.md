@@ -31,17 +31,42 @@ This test suite follows a risk-based, user-journey approach to ensure the most c
 
 ## How to Run the Tests
 
-1. Install dependencies
-   npm ci
+1. Install dependencies  
+   npm ci  
    npx playwright install --with-deps
 
-2. Run all tests
+2. Run all tests  
    npm test
 
-3. View the HTML test report
+3. View the HTML test report  
    npx playwright show-report
 
 The report includes execution results, screenshots, and traces for any failed tests.
+
+---
+
+## How to Push Changes to GitHub
+
+If you update files or make edits while working in your Codespace, follow these steps to push your changes to GitHub:
+
+1. Check your changes  
+   git status
+
+2. Stage all modified or new files  
+   git add .
+
+3. Commit with a clear message  
+   git commit -m "Describe your changes here"
+
+4. Push the commit to GitHub  
+   git push origin main
+
+After pushing, visit your repository page:  
+https://github.com/ninathelmo/saucedemo-playwright  
+to confirm that your latest commit and files are visible.
+
+Quick one-liner for convenience:  
+git add . && git commit -m "Update project files" && git push origin main
 
 ---
 
