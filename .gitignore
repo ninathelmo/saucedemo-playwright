@@ -1,0 +1,10 @@
+node_modules
+.playwright
+playwright-report
+npm-debug.log
+.env
+
+# generated/by npm/playwright
+node_modules/
+playwright-report/
+test-results/
