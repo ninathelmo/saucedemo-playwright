@@ -45,6 +45,34 @@ The report includes execution results, screenshots, and traces for any failed te
 
 ---
 
+## Continuous Integration (Bonus)
+
+This project includes GitHub Actions CI integration to automatically run Playwright tests on every push and pull request.
+
+### Workflow Location
+.github/workflows/ci.yml
+
+### What the Workflow Does
+- Checks out the repository  
+- Installs Node.js and dependencies  
+- Installs Playwright browsers  
+- Runs Playwright tests in headless mode  
+- Generates HTML and JUnit reports  
+- Uploads test artifacts (reports, screenshots, and traces)
+
+### How to View CI Results
+1. Go to the Actions tab in the repository:  
+   https://github.com/ninathelmo/saucedemo-playwright/actions  
+2. Click the latest Playwright Tests workflow run.  
+3. View logs or download artifacts such as:  
+   - playwright-report → HTML report  
+   - test-results → screenshots and traces
+
+### CI Status Badge
+[![Playwright Tests](https://github.com/ninathelmo/saucedemo-playwright/actions/workflows/ci.yml/badge.svg)](https://github.com/ninathelmo/saucedemo-playwright/actions/workflows/ci.yml)
+
+---
+
 ## How to Push Changes to GitHub
 
 If you update files or make edits while working in your Codespace, follow these steps to push your changes to GitHub:
